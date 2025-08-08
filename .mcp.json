@@ -15,10 +15,10 @@
       "config": {
         "github": {
           "ownerType": "user",
-          "ownerName": "webdev-jp-net",
+          "ownerName": "webdev-jp-net"
         },
         "repositories": {
-          "document": "ai-spec-driven-documents",
+          "document": "ai-spec-driven-documents"
         }
       }
     }
