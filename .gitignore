@@ -1,0 +1,194 @@
+# =============================================================================
+# AI協働開発プロジェクト用 .gitignore
+# =============================================================================
+
+# OS固有ファイル
+# -----------------------------------------------------------------------------
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# エディタ・IDE
+# -----------------------------------------------------------------------------
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# 一時ファイル・ログ
+# -----------------------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.cache
+*.pid
+*.lock
+*.out
+*.err
+
+# AIエージェント関連
+# -----------------------------------------------------------------------------
+# AI生成の一時ファイル
+.ai-temp/
+ai-scratch/
+*.ai-backup
+.llm-cache/
+
+# AI開発環境設定
+.cursorignore
+.cursor/
+
+# 機密情報を含む可能性のあるファイル
+secrets.md
+private-notes.md
+.env.local
+.env.secret
+
+# 開発環境固有
+# -----------------------------------------------------------------------------
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+.pnpm-debug.log*
+
+# Next.js
+.next/
+out/
+.vercel
+.env*.local
+next-env.d.ts
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Ruby
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+.bundle/
+vendor/bundle
+lib/bundler/man/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+target/
+.gradle/
+build/
+
+# プロジェクト固有の除外
+# -----------------------------------------------------------------------------
+# ドキュメント生成物
+docs/build/
+site/
+
+# バックアップファイル
+*.bak
+*.backup
+*~
+
+# 作業中ファイル（個人用メモなど）
+WORKING.md
+TODO-personal.md
+scratch.md
+notes-*.md
+
+# テスト・ドキュメント関連
+# -----------------------------------------------------------------------------
+# Storybook関連
+*.stories.js
+*.stories.ts
+*.stories.jsx
+*.stories.tsx
+storybook-static/
+
+# テスト仕様書（プロジェクトによって管理方針が異なる）
+# *.spec.js
+# *.spec.ts
+# *.test.js
+# *.test.ts

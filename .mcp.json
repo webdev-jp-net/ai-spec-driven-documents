@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "ai-spec-driven-document": {
+      "command": "deno",
+      "args": [
+        "run",
+        "--allow-env",
+        "--allow-read=.,_llm-docs,_llm-rules,_llm-memories",
+        "--allow-write=_llm-memories",
+        "--allow-net=api.github.com",
+        "--allow-run=gh",
+        "--allow-sys=homedir",
+        "tools/mcp-server/server.ts"
+      ],
+      "config": {
+        "github": {
+          "ownerType": "user",
+          "ownerName": "webdev-jp-net",
+        },
+        "repositories": {
+          "document": "ai-spec-driven-documents",
+        }
+      }
+    }
+  }
+}
