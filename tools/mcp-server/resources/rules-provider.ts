@@ -43,7 +43,7 @@ export class RulesProvider {
       resources.push({
         uri: "file://_llm-rules/session_control.md",
         name: "セッション制御",
-        description: "Claude Code セッション制御とルール適用の基点",
+        description: "AIエージェント セッション制御とルール適用の基点",
         mimeType: "text/markdown"
       });
 
@@ -120,7 +120,7 @@ export class RulesProvider {
   private generateDescription(_relativePath: string, fileName: string): string {
     // ファイル名から推測
     if (fileName.includes('session_control')) {
-      return 'Claude Code セッション制御の基点ルール';
+      return 'AIエージェント セッション制御の基点ルール';
     } else if (fileName.includes('core_rules')) {
       return 'プロジェクト全体の基本ルール';
     } else if (fileName.includes('naming')) {

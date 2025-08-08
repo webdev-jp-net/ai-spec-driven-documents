@@ -19,7 +19,7 @@ alwaysApply: true
 - チャットでIssueやPRの作成・編集・コメント依頼があった場合、原則として`gh`コマンド（GitHub CLI）を用いてGitHubと連携する。
 - `gh`コマンドが利用できない場合は、セットアップ方法を開発者に案内し、連携実現をサポートする。
 - **すべてのコミット**で、コミットメッセージ末尾にIssue番号（`#[番号]`）を必ず付与する。
-- **AI（Claude Code）の絶対遵守事項**: 
+- **AIエージェントの絶対遵守事項**: 
   - コミット実行前に必ずIssue番号の有無をチェックする
   - コミット後に必ず `git log --oneline -1` でIssue番号を検証する
   - Issue番号が不足している場合は即座に `git commit --amend` で修正する
@@ -189,7 +189,7 @@ git branch --show-current
 git status
 ```
 
-### AI（Claude Code）への指示
+### AIエージェントへの指示
 **Issue番号を受け取った際は、必ず以下の順序で実行すること：**
 
 1. **現在のブランチ確認**: `git branch --show-current`
@@ -277,7 +277,7 @@ git push -u origin feature/[英語概要]#[Issue番号]
 - 初回リモートpush時にIssueのDevelopmentセクションに「ブランチ」として表示される
 - 手動設定が不要で、ブランチpushだけで自動的に紐づけが完了
 
-### AI（Claude Code）の必須確認事項
+### AIエージェントの必須確認事項
 **重要**: 上記の「Issue着手前の必須確認」を実行した後の補足チェック
 
 1. **ブランチ命名チェック**：

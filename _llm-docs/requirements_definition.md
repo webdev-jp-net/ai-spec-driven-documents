@@ -24,5 +24,5 @@ alwaysApply: true
 
 ### 技術基盤・開発支援
 
-- [MCP Server 仕様書](./mcp/tech_structure.md) - Claude Code連携のためのModel Context Protocol実装仕様
+- [MCP Server 仕様書](./mcp/tech_structure.md) - AIエージェント連携のためのModel Context Protocol実装仕様
 - [GitHub Projects設定](./github-projects-config.md) - Issue管理とプロジェクト連携の設定詳細

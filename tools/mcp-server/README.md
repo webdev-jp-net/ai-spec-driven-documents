@@ -1,6 +1,6 @@
 # Project MCP Server
 
-DenoベースのModel Context Protocol (MCP) サーバーで、プロジェクトドキュメントリポジトリ内でのClaude Code利用時にプロジェクトルールやドキュメント、Issue管理機能を提供します。
+DenoベースのModel Context Protocol (MCP) サーバーで、プロジェクトドキュメントリポジトリ内でのAIエージェント（Cursor、Windsurf、Claude Code等）利用時にプロジェクトルールやドキュメント、Issue管理機能を提供します。
 
 ## プロジェクト設定
 
@@ -35,7 +35,7 @@ MCPサーバーはプロジェクト固有の設定を `.mcp.json` ファイル�
 - GitHub CLI (`gh`) インストール済み
 - GitHub認証済み (`gh auth login`)
 
-### Claude Code 設定
+### AIエージェント設定
 
 プロジェクトルートの `.mcp.json` ファイルに以下を設定:
 
@@ -101,11 +101,11 @@ echo '{"jsonrpc":"2.0","method":"initialize","id":1,"params":{"protocolVersion":
 ## 🛠️ 使用方法
 
 1. **リポジトリルートに配置**: プロジェクトのルートに `.mcp.json` ファイルを配置し、`config` セクションをプロジェクトに合わせて設定
-2. **Claude Code起動**: リポジトリ内で Claude Code を起動すると MCP サーバーが自動接続
+2. **AIエージェント起動**: リポジトリ内で AIエージェントを起動すると MCP サーバーが自動接続
 3. **機能利用**: プロジェクトルールやドキュメントが利用可能に
 
 **重要**: 
-- 設定変更後はClaude Codeを再起動してください
+- 設定変更後はAIエージェントを再起動してください
 - このMCPサーバーは `.mcp.json` の設定により任意のプロジェクトで動作します
 
 ### 主な利用シナリオ
@@ -244,8 +244,8 @@ unset MCP_DEBUG MCP_VERBOSE
 
 ### ログ確認
 ```bash
-# MCP通信ログ（Claude Code）
-# Claude Code使用時のログは標準エラー出力に表示されます
+# MCP通信ログ（AIエージェント）
+# AIエージェント使用時のログは標準エラー出力に表示されます
 deno task mcp:start  # 手動実行でログを確認
 
 # デバッグ付きで実行
@@ -270,7 +270,7 @@ deno run --allow-all dev/debug_labels.ts
    ```bash
    # .mcp.jsonの設定を確認
    # deno task mcp:start で手動テストを実行
-   # Claude Codeを完全に再起動
+   # AIエージェントを完全に再起動
    ```
 
 2. **GitHub認証エラー**
@@ -286,7 +286,7 @@ deno run --allow-all dev/debug_labels.ts
 4. **Connection closed エラー**
    - Denoのインストール状況を確認
    - 環境変数の設定を確認
-   - Claude Code を完全再起動
+   - AIエージェントを完全再起動
 
 ### 手動テスト実行
 
@@ -336,7 +336,7 @@ MCPサーバーは `.mcp.json` ファイルの `config` セクションからプ
 1. プロジェクトルートに `.mcp.json` を作成
 2. `config` セクションをプロジェクトに合わせて設定
 3. MCPサーバーのパスを調整（必要に応じて）
-4. Claude Codeを起動して利用開始
+4. AIエージェントを起動して利用開始
 
 ### カスタムプロジェクト構造の例
 
@@ -415,4 +415,4 @@ MCPサーバーは `.mcp.json` ファイルの `config` セクションからプ
 - Model Context Protocol (MCP)
 - GitHub CLI + API
 
-🤖 **Generated with Claude Code** - Local MCP Server for Project Documentation
+🤖 **Generated with AI Agent** - Local MCP Server for Project Documentation

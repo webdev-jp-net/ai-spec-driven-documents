@@ -10,8 +10,6 @@
 ._*
 .Spotlight-V100
 .Trashes
-ehthumbs.db
-Thumbs.db
 
 # Windows
 Thumbs.db
@@ -20,7 +18,6 @@ Desktop.ini
 $RECYCLE.BIN/
 
 # Linux
-*~
 .fuse_hidden*
 .directory
 .Trash-*
@@ -43,11 +40,9 @@ $RECYCLE.BIN/
 # Vim
 *.swp
 *.swo
-*~
 .netrwhist
 
 # Emacs
-*~
 \#*\#
 /.emacs.desktop
 /.emacs.desktop.lock
@@ -55,6 +50,9 @@ $RECYCLE.BIN/
 auto-save-list
 tramp
 .\#*
+
+# 共通の一時ファイル
+*~
 
 # 一時ファイル・ログ
 # -----------------------------------------------------------------------------
@@ -69,15 +67,16 @@ tramp
 
 # AIエージェント関連
 # -----------------------------------------------------------------------------
+# AI開発環境設定
+.cursor/
+.cursorignore
+.claude/settings.local.json
+
 # AI生成の一時ファイル
 .ai-temp/
 ai-scratch/
 *.ai-backup
 .llm-cache/
-
-# AI開発環境設定
-.cursorignore
-.cursor/
 
 # 機密情報を含む可能性のあるファイル
 secrets.md
@@ -85,16 +84,15 @@ private-notes.md
 .env.local
 .env.secret
 
-# 開発環境固有
+# Node.js / JavaScript / TypeScript
 # -----------------------------------------------------------------------------
-# Node.js
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 .npm
 .yarn-integrity
-.pnpm-debug.log*
 
 # Next.js
 .next/
@@ -104,6 +102,7 @@ out/
 next-env.d.ts
 
 # Python
+# -----------------------------------------------------------------------------
 __pycache__/
 *.py[cod]
 *$py.class
@@ -134,6 +133,7 @@ env.bak/
 venv.bak/
 
 # Ruby
+# -----------------------------------------------------------------------------
 *.gem
 *.rbc
 /.config
@@ -150,6 +150,7 @@ vendor/bundle
 lib/bundler/man/
 
 # Java
+# -----------------------------------------------------------------------------
 *.class
 *.jar
 *.war
@@ -161,25 +162,12 @@ target/
 .gradle/
 build/
 
-# プロジェクト固有の除外
+# ドキュメント・テスト
 # -----------------------------------------------------------------------------
 # ドキュメント生成物
 docs/build/
 site/
 
-# バックアップファイル
-*.bak
-*.backup
-*~
-
-# 作業中ファイル（個人用メモなど）
-WORKING.md
-TODO-personal.md
-scratch.md
-notes-*.md
-
-# テスト・ドキュメント関連
-# -----------------------------------------------------------------------------
 # Storybook関連
 *.stories.js
 *.stories.ts
@@ -192,3 +180,15 @@ storybook-static/
 # *.spec.ts
 # *.test.js
 # *.test.ts
+
+# プロジェクト固有の除外
+# -----------------------------------------------------------------------------
+# バックアップファイル
+*.bak
+*.backup
+
+# 作業中ファイル（個人用メモなど）
+WORKING.md
+TODO-personal.md
+scratch.md
+notes-*.md

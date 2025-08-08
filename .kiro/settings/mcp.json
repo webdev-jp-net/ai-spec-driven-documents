@@ -18,7 +18,16 @@
         "--allow-run=gh",
         "--allow-sys=homedir",
         "tools/mcp-server/server.ts"
-      ]
+      ],
+      "config": {
+        "github": {
+          "ownerType": "user",
+          "ownerName": "webdev-jp-net",
+        },
+        "repositories": {
+          "document": "ai-spec-driven-documents",
+        }
+      }
     }
   }
 }
